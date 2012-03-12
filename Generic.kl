@@ -13,11 +13,10 @@
 # limitations under the License.
 
 #
-# Generic key layout file for full alphabetic US English PC style external keyboards.
+# key layout file for full alphabetic german PC style external keyboards.
 #
-# This file is intentionally very generic and is intended to support a broad rang of keyboards.
-# Do not edit the generic key layout to support a specific keyboard; instead, create
-# a new key layout file with the required keyboard configuration.
+# Asus Eee PC 1015PX
+# ranfyy@gmail.com
 #
 
 key 1     ESCAPE
@@ -40,7 +39,7 @@ key 17    W
 key 18    E
 key 19    R
 key 20    T
-key 21    Y
+key 21    Z
 key 22    U
 key 23    I
 key 24    O
@@ -63,7 +62,7 @@ key 40    APOSTROPHE
 key 41    GRAVE
 key 42    SHIFT_LEFT
 key 43    BACKSLASH
-key 44    Z
+key 44    Y
 key 45    X
 key 46    C
 key 47    V
@@ -105,7 +104,8 @@ key 82    NUMPAD_0
 key 83    NUMPAD_DOT
 # key 84 (undefined)
 # key 85 "KEY_ZENKAKUHANKAKU"
-key 86    BACKSLASH
+# had to remap that to a game button cause LESS or KEY_LESS is not known! 
+key 86    BUTTON_16
 key 87    F11
 key 88    F12
 # key 89 "KEY_RO"
