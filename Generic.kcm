@@ -115,7 +115,8 @@ key M {
     label:                              'M'
     base:                               'm'
     shift, capslock:                    'M'
-    ctrl, alt, meta:                    none
+    alt:                                '\u03bc'
+    ctrl, meta:                         none
 }
 
 key N {
