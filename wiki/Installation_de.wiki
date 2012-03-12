@@ -14,6 +14,6 @@ Wenn ich Win7 boote kann ich einfach darin herumbrowsen und Dateien hin- und her
 
 Mit dem  Webbrowser deiner Wahl die beiden Dateien herunterladen, und in die entsprechenden Verzeichnisse kopieren:
   * D:\android-x86-4.0\system\usr\keylayout\Generic.kl
-  * D:\android-x86-4.0\system\usr\keymap\Generic.kcm
+  * D:\android-x86-4.0\system\usr\keychars\Generic.kcm
 
 Rebooten und testen. Und mir bescheid geben mit welcher Hardware ihr es getestet habt.
