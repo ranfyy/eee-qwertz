@@ -1,3 +1,4 @@
+#labels Phase-Deploy
 Installationsanleitung
 
 = Vorwort =
@@ -12,7 +13,7 @@ Wenn ich Win7 boote kann ich einfach darin herumbrowsen und Dateien hin- und her
 
 = Details =
 
-Mit dem  Webbrowser deiner Wahl die beiden Dateien herunterladen, und in die entsprechenden Verzeichnisse kopieren:
+Unter Windows mit dem  Webbrowser deiner Wahl die beiden Dateien herunterladen, und in die entsprechenden Verzeichnisse kopieren:
   * D:\android-4.0-RC1\system\usr\keylayout\Generic.kl
   * D:\android-4.0-RC1\system\usr\keychars\Generic.kcm
 
