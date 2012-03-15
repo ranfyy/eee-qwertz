@@ -8,61 +8,48 @@ Here I sum up the approaches and tools I used for changing the keyboard layout.
 = Approach #1 =
 
 Directly put your changes into these files:
-
-/system/usr/keychars/Generic.kcm
-
-/system/usr/keylayout/Generic.kl
+ /system/usr/keychars/Generic.kcm
+ /system/usr/keylayout/Generic.kl
 
 
-Pro: *just works*
+*Pro:* "just works"
 
-Con: not very flexible
+*Con:* not very flexible
 
 = Approach #2 =
 
 make a copy of these 2 files and name them accordingly like for instance:
-
-qwertz_de_DE - qwertz keyboard, german language, country: Germany
-
-qwertz_de_CH - qwertz keyboard, german language, country: Switzerland
-
-qwertz_cz_CZ - qwertz keyboard, czech  language, country: Czech
-
-azerty_fr_FR - azerty keyboard, french language, country: France
+ qwertz_de_DE - qwertz keyboard, german language, country: Germany
+ qwertz_de_CH - qwertz keyboard, german language, country: Switzerland
+ qwertz_cz_CZ - qwertz keyboard, czech  language, country: Czech
+ azerty_fr_FR - azerty keyboard, french language, country: France
 
 
 Then you create an idc (input device configuration) file. They are in this directory:
-
-/system/usr/idc/
+ /system/usr/idc/
 
 You need to find out which name your keyboard has.
 
 The internal of my EeePC is: "AT Translated Set 2 keyboard"
 
 That means your new idc file must be named:
-
-AT_Translated_Set_2_keyboard.idc
+ AT_Translated_Set_2_keyboard.idc
 
 USB keyboards should get a name like this:
-
-/system/usr/idc/Vendor_XXXX_Product_XXXX.idc
+ /system/usr/idc/Vendor_XXXX_Product_XXXX.idc
 
 
 *Pro:* more flexible. You can have 3 different idc files each pointing to the same layout and keychars file. Like one for internal keyboard, one for an USB keyboard, one for a bluetooth keyboard.
 
 *Con:* a tiny little bit more work to implement
 
-*summary*
-currently in implementation and testing
+This is currently in implementation and testing.
 
 == tools on the android device ==
-https://play.google.com/store/apps/details?id=org.jtb.alogcat
-
-https://play.google.com/store/apps/details?id=org.l6n.sendlog
-
-https://play.google.com/store/apps/details?id=aws.apps.keyeventdisplay
-
-https://play.google.com/store/apps/details?id=com.foobnix.keycode
+  * https://play.google.com/store/apps/details?id=org.jtb.alogcat
+  * https://play.google.com/store/apps/details?id=org.l6n.sendlog
+  * https://play.google.com/store/apps/details?id=aws.apps.keyeventdisplay
+  * https://play.google.com/store/apps/details?id=com.foobnix.keycode
 
 
 == tools on Windows ==
