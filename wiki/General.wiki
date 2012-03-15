@@ -19,10 +19,10 @@ Directly put your changes into these files:
 = Approach #2 =
 
 make a copy of these 2 files and name them accordingly like for instance:
- qwertz_de_DE - qwertz keyboard, german language, country: Germany
- qwertz_de_CH - qwertz keyboard, german language, country: Switzerland
- qwertz_cz_CZ - qwertz keyboard, czech  language, country: Czech
- azerty_fr_FR - azerty keyboard, french language, country: France
+  * qwertz_de_DE - qwertz keyboard, german language, country: Germany
+  * qwertz_de_CH - qwertz keyboard, german language, country: Switzerland
+  * qwertz_cz_CZ - qwertz keyboard, czech  language, country: Czech
+  * azerty_fr_FR - azerty keyboard, french language, country: France
 
 
 Then you create an idc (input device configuration) file. They are in this directory:
