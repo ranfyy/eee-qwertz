@@ -8,9 +8,10 @@ Here I sum up the approaches and tools I used for changing the keyboard layout.
 = Approach #1 =
 
 Directly put your changes into these files:
+{{{
  /system/usr/keychars/Generic.kcm
  /system/usr/keylayout/Generic.kl
-
+}}}
 
 *Pro:* "just works"
 
