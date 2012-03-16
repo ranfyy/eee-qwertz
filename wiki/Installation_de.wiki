@@ -13,8 +13,9 @@ Wenn ich Win7 boote kann ich einfach darin herumbrowsen und Dateien hin- und her
 
 = Details =
 
-Unter Windows mit dem  Webbrowser deiner Wahl die beiden Dateien herunterladen, und in die entsprechenden Verzeichnisse kopieren:
-  * D:\android-4.0-RC1\system\usr\keylayout\Generic.kl
-  * D:\android-4.0-RC1\system\usr\keychars\Generic.kcm
+Unter Windows mit dem  Webbrowser deiner Wahl die 3 Dateien herunterladen, und in die entsprechenden Verzeichnisse kopieren:
+  * D:\android-4.0-RC1\system\usr\idc\AT_Translated_Set_2_keyboard.idc
+  * D:\android-4.0-RC1\system\usr\keylayout\qwertz_de_DE.kl
+  * D:\android-4.0-RC1\system\usr\keychars\qwertz_de_DE.kcm
 
 Rebooten und testen. Und mir bescheid geben mit welcher Hardware ihr es getestet habt.
