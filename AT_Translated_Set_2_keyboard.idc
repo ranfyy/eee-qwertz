@@ -13,15 +13,16 @@
 # limitations under the License.
 
 #
-# Emulator keyboard configuration file #1.
+# internal keyboard configuration file
+# <ranfyy@gmail.com>
 #
 
 touch.deviceType = touchScreen
 touch.orientationAware = 1
 
-keyboard.layout = qwerty
-keyboard.characterMap = qwerty
-keyboard.orientationAware = 1
+keyboard.layout = qwertz_de_DE
+keyboard.characterMap = qwertz_de_DE
+keyboard.orientationAware = 0
 keyboard.builtIn = 1
 
 cursor.mode = navigation
