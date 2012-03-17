@@ -1,5 +1,8 @@
 # (c) 2012 ranfyy
 #
+# based on:
+#   http://www.borncity.com/blog/2012/02/29/android-x86-ics-fr-eee-pc-701-und-netbooks/comment-page-1/#comment-5664
+#
 # If you haven't installed android-x86 yet
 # or installed it in another way than I did
 # then here is a way to repackage the file
