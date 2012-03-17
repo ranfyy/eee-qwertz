@@ -1,0 +1,50 @@
+# (c) 2012 ranfyy
+#
+# If you haven't installed android-x86 yet
+# or installed it in another way than I did
+# then here is a way to repackage the file
+#   system.sfs
+# on your USB thumb drive (USB stick).
+
+# I tested this on Ubuntu Lucid Lynx 10.04 LTS.
+# You need sudo rights for mount, umount and apt-get
+
+
+
+sudo apt-get install squashfs-tools
+
+# plug in the USB
+# in Ubuntu it gets automatically mounted
+# for me it is here:
+#   /media/3047-842B
+# Use mount to find out.
+
+# a work directory
+mkdir sfs_work
+cd sfs_work
+mkdir mnt
+
+cp /media/3047-842B/system.sfs .
+  
+sudo mount -o loop system.sfs mnt/
+cp mnt/system.img .
+sudo umount mnt/
+
+sudo mount -o loop system.img mnt/
+
+cp mnt/usr/keychars/Generic.kcm .
+cp mnt/usr/keylayout/Generic.kl .
+
+# edit the files
+# or copy mine there
+
+sudo umount mnt/
+rm system.sfs
+
+mksquashfs system.img system.sfs
+
+# copy system.sfs back to your USB stick
+cp system.sfs /media/3047-842B/
+sync
+
+# try it
