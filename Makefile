@@ -13,7 +13,7 @@ version:
 revision:
 	@echo revision: $(REV)
 
-dist:	clean
+dist:
 	zip  ../$(PRJ)_$(VERSION)_r$(REV).zip * -x@.zipignore 
 
 upload:
