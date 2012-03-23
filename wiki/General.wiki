@@ -32,7 +32,7 @@ Then you create an idc (input device configuration) file. They are in this direc
 /system/usr/idc/
 }}}
 
-You need to find out which name your keyboard has.
+You need to find out which name your keyboard has. Use aLogCat and its Filter option.
 
 The internal of my EeePC is: "AT Translated Set 2 keyboard"
 
@@ -49,7 +49,9 @@ Another scenario which I find interesting: you can set the internal keyboard to 
 
 *Con:* a tiny little bit more work to implement
 
-This is currently in implementation and testing.
+--This is currently in implementation and testing.--
+
+*Status:* released
 
 == tools on the Android device ==
   * https://play.google.com/store/apps/details?id=org.jtb.alogcat
