@@ -49,7 +49,7 @@ Another scenario which I find interesting: you can set the internal keyboard to 
 
 *Con:* a tiny little bit more work to implement
 
---This is currently in implementation and testing.--
+~~This is currently in implementation and testing.~~
 
 *Status:* released
 
