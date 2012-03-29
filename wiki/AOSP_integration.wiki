@@ -14,9 +14,9 @@ libs/ui/Input.cpp
 String8 language;
 String8 country;
 String8 idcfn;
-// I don't know if getopt() exists
-language.setTo( getopt("persist.sys.language") );
-country.setTo(  getopt("persist.sys.country") );
+// I don't know if getprop() exists
+language.setTo( getprop("persist.sys.language") );
+country.setTo(  getprop("persist.sys.country") );
 idcfn.setTo(language);
 idcfn.append("_");
 idcfn.append(country);
