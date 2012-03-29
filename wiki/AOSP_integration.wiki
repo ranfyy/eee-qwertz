@@ -1,0 +1,37 @@
+#labels Phase-Design
+Integration into AOSP. *WIP*
+
+= Introduction =
+
+Integration of language/country based IDC/KL/KCM files into AOSP.
+
+
+= Details =
+
+{{{
+libs/ui/Input.cpp
+---
+String8 language;
+String8 country;
+String8 idcfn;
+// I don't know if getopt() exists
+language.setTo( getopt("persist.sys.language") );
+country.setTo(  getopt("persist.sys.country") );
+idcfn.setTo(language);
+idcfn.append("_");
+idcfn.append(country);
+idcfn.append(type);
+
+if(!language.isEmpty()) {
+   return idcfn;
+}
+}}}
+
+= abbrev. =
+
+|| abbrev. || abbreviations ||
+|| AOSP || Android open source project ||
+|| IDC || input device configuration ||
+|| KCM || key char map ||
+|| KL || keyboard layout ||
+|| WIP || work in progress ||
