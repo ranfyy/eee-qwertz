@@ -27,6 +27,10 @@ if(!language.isEmpty()) {
 }
 }}}
 
+{{{
+./data/keyboards/common.mk
+---
+}}}
 = abbrev. =
 
 || abbrev. || abbreviations ||
