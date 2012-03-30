@@ -11,12 +11,18 @@ Integration of language/country based IDC/KL/KCM files into AOSP.
 {{{
 libs/ui/Input.cpp
 ---
+const PropertyMap& in = getDevice()->getConfiguration();
 String8 language;
 String8 country;
 String8 idcfn;
-// I don't know if getprop() exists
-language.setTo( getprop("persist.sys.language") );
-country.setTo(  getprop("persist.sys.country") );
+
+if(!in.tryGetProperty(String8("persist.sys.language"),language)) {
+	language.setTo("en");
+}
+if(!in.tryGetProperty(String8("persist.sys.country"),country)) {
+	country.setTo("US");
+}
+
 idcfn.setTo(language);
 idcfn.append("_");
 idcfn.append(country);
@@ -31,6 +37,7 @@ if(!language.isEmpty()) {
 ./data/keyboards/common.mk
 ---
 }}}
+
 = abbrev. =
 
 || abbrev. || abbreviations ||
