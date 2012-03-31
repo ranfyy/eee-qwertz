@@ -16,6 +16,7 @@ String8 language;
 String8 country;
 String8 idcfn;
 
+// maybe check for this first: "ro.product.brand" -> "generic_x86"
 if(!in.tryGetProperty(String8("persist.sys.language"),language)) {
 	language.setTo("en");
 }
