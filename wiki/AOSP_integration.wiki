@@ -31,6 +31,8 @@ return productPath;
 // add de_DE.idc, fr_FR.idc and so on
 }}}
 
+https://lh6.googleusercontent.com/-3UjqrOERJsM/T32SZ2h9JiI/AAAAAAAAAUU/ETxQo4zKWvo/s800/keyboards.png
+
 = abbrev. =
 
 || abbrev. || abbreviations ||
