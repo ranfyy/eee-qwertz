@@ -1,0 +1,40 @@
+digraph idc {
+
+graph [
+rankdir = "LR"
+];
+
+"de_idc" [
+label = "de_DE.idc"
+];
+
+"de_kl" [
+label = "qwertz_de_DE.kl"
+];
+
+"de_kcm" [
+label = "qwertz_de_DE.kcm"
+];
+
+	de_idc -> de_kl;
+	de_idc -> de_kcm;
+	de_kl -> de_kcm;
+	
+
+"fr_idc" [
+label = "fr_FR.idc"
+];
+
+"fr_kl" [
+label = "azerty_fr_FR.kl"
+];
+
+"fr_kcm" [
+label = "azerty_fr_FR.kcm"
+];
+
+	fr_idc -> fr_kl;
+	fr_idc -> fr_kcm;
+	fr_kl -> fr_kcm;
+	
+}
