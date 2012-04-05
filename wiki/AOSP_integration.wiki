@@ -9,34 +9,26 @@ Integration of language/country based IDC/KL/KCM files into AOSP.
 = Details =
 
 {{{
-libs/ui/Input.cpp
+./libs/ui/Input.cpp
 ---
-const PropertyMap& in = getDevice()->getConfiguration();
-String8 language;
-String8 country;
-String8 idcfn;
+char language[PROPERTY_VALUE_MAX];
+char country[PROPERTY_VALUE_MAX];
 
 // maybe check for this first: "ro.product.brand" -> "generic_x86"
-if(!in.tryGetProperty(String8("persist.sys.language"),language)) {
-	language.setTo("en");
-}
-if(!in.tryGetProperty(String8("persist.sys.country"),country)) {
-	country.setTo("US");
-}
+property_get("persist.sys.language", language, "");
+property_get("persist.sys.country"), country, "");
 
-idcfn.setTo(language);
-idcfn.append("_");
-idcfn.append(country);
-idcfn.append(type);
+String8 productPath(getInputDeviceConfigurationFilePathByName(
+        String8::format("%s_%s", language, country),
+        type));
 
-if(!language.isEmpty()) {
-   return idcfn;
-}
+return productPath;
 }}}
 
 {{{
 ./data/keyboards/common.mk
 ---
+// add de_DE.idc, fr_FR.idc and so on
 }}}
 
 = abbrev. =
