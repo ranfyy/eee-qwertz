@@ -16,6 +16,13 @@ label = "qwertz_de_DE.kl"
 label = "qwertz_de_DE.kcm"
 ];
 
+"AT_idc" [
+label = "AT_Translated_Set_2_keyboard.idc"
+];
+
+  AT_idc -> de_kl;
+  AT_idc -> de_kcm;
+  
 	de_idc -> de_kl;
 	de_idc -> de_kcm;
 	de_kl -> de_kcm;
