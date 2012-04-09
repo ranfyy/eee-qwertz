@@ -10,6 +10,7 @@ Dabei werden 2 Verzeichnisse angelegt:
 
 Wenn ich Win7 boote kann ich einfach darin herumbrowsen und Dateien hin- und herkopieren.
 
+*Achtung:* bei der Installation unbedingt die Frage "mount system read/write" bejahen.
 
 = Details =
 
