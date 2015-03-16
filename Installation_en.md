@@ -1,0 +1,20 @@
+installation instructions
+
+# Introduction #
+
+I just installed android-x86 on the Win drive D:.
+This creates 2 directories:
+  * android-4.0-RC1
+  * grub
+
+When I boot Win7 I can easily browse around there and copy files back and forth.
+
+
+# Details #
+
+In Windows download the 3 files with your web browser of choice and copy them to these directories:
+  * `D:\android-4.0-RC1\system\usr\idc\AT_Translated_Set_2_keyboard.idc`
+  * `D:\android-4.0-RC1\system\usr\keylayout\qwertz_de_DE.kl`
+  * `D:\android-4.0-RC1\system\usr\keychars\qwertz_de_DE.kcm`
+
+Reboot and test.

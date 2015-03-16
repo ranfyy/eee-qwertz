@@ -1,0 +1,66 @@
+approaches to use different keyboard layouts
+
+# Introduction #
+Here I sum up the approaches and tools I used for changing the keyboard layout.
+
+
+# Approach #1 #
+
+Directly put your changes into these files:
+```
+ /system/usr/keychars/Generic.kcm
+ /system/usr/keylayout/Generic.kl
+```
+
+**Pro:** "just works"
+
+**Con:** not very flexible
+
+# Approach #2 #
+
+make a copy of these 2 files and name them accordingly like for instance:
+```
+qwertz_de_DE - qwertz keyboard, german language, country: Germany
+qwertz_de_CH - qwertz keyboard, german language, country: Switzerland
+qwertz_cz_CZ - qwertz keyboard, czech  language, country: Czech
+azerty_fr_FR - azerty keyboard, french language, country: France
+```
+
+Then you create an idc (input device configuration) file. They are in this directory:
+```
+/system/usr/idc/
+```
+
+You need to find out which name your keyboard has. Use aLogCat and its Filter option.
+
+The internal of my EeePC is: "AT Translated Set 2 keyboard"
+
+That means your new idc file must be named:
+`AT_Translated_Set_2_keyboard.idc`
+
+USB keyboards should get a name like this:
+`/system/usr/idc/Vendor_XXXX_Product_XXXX.idc`
+
+
+**Pro:** more flexible. You can have 3 different idc files each pointing to the same layout and keychars file. Like one for internal keyboard, one for an USB keyboard, one for a bluetooth keyboard.
+
+Another scenario which I find interesting: you can set the internal keyboard to German and additionally have an USB keyboard set to French, Russian or whatever.
+
+**Con:** a tiny little bit more work to implement
+
+~~This is currently in implementation and testing.~~
+
+**Status:** released
+
+## tools on the Android device ##
+  * https://play.google.com/store/apps/details?id=org.jtb.alogcat
+  * https://play.google.com/store/apps/details?id=org.l6n.sendlog
+  * https://play.google.com/store/apps/details?id=aws.apps.keyeventdisplay
+  * https://play.google.com/store/apps/details?id=com.foobnix.keycode
+
+## tools on Linux ##
+  * gucharmap - GNOME character map
+  * RapidSVN - GUI SVN client
+
+## tools on Windows ##
+  * charmap.exe - available in every default installation

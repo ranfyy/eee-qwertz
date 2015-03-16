@@ -1,0 +1,43 @@
+Integration into AOSP. **WIP**
+
+# Introduction #
+
+Integration of language/country based IDC/KL/KCM files into AOSP.
+
+
+# Details #
+
+```
+./libs/ui/Input.cpp
+---
+char language[PROPERTY_VALUE_MAX];
+char country[PROPERTY_VALUE_MAX];
+
+// maybe check for this first: "ro.product.brand" -> "generic_x86"
+property_get("persist.sys.language", language, "");
+property_get("persist.sys.country"), country, "");
+
+String8 productPath(getInputDeviceConfigurationFilePathByName(
+        String8::format("%s_%s", language, country),
+        type));
+
+return productPath;
+```
+
+```
+./data/keyboards/common.mk
+---
+// add de_DE.idc, fr_FR.idc and so on
+```
+
+![https://lh6.googleusercontent.com/-3UjqrOERJsM/T32SZ2h9JiI/AAAAAAAAAUU/ETxQo4zKWvo/s800/keyboards.png](https://lh6.googleusercontent.com/-3UjqrOERJsM/T32SZ2h9JiI/AAAAAAAAAUU/ETxQo4zKWvo/s800/keyboards.png)
+
+# abbrev. #
+
+| abbrev. | abbreviations |
+|:--------|:--------------|
+| AOSP | Android open source project |
+| IDC | input device configuration |
+| KCM | key char map |
+| KL | keyboard layout |
+| WIP | work in progress |

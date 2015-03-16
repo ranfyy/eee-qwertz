@@ -1,0 +1,21 @@
+Installationsanleitung
+
+# Vorwort #
+
+Ich habe android-x86 einfach auf dem Win-Laufwerk D: installiert.
+Dabei werden 2 Verzeichnisse angelegt:
+  * android-4.0-RC1
+  * grub
+
+Wenn ich Win7 boote kann ich einfach darin herumbrowsen und Dateien hin- und herkopieren.
+
+**Achtung:** bei der Android-Installation unbedingt die Frage "mount system read/write" bejahen.
+
+# Details #
+
+Unter Windows mit dem  Webbrowser deiner Wahl die 3 Dateien herunterladen, und in die entsprechenden Verzeichnisse kopieren:
+  * `D:\android-4.0-RC1\system\usr\idc\AT_Translated_Set_2_keyboard.idc`
+  * `D:\android-4.0-RC1\system\usr\keylayout\qwertz_de_DE.kl`
+  * `D:\android-4.0-RC1\system\usr\keychars\qwertz_de_DE.kcm`
+
+Rebooten und testen. Und mir bescheid geben mit welcher Hardware ihr es getestet habt.
